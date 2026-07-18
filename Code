@@ -139,7 +139,7 @@ class Model:
         self.loss = LOSSES[loss]()
         self.loss_name = loss
 
-    it is a full forward pass trough the network
+    # it is a full forward pass trough the network
     def forward(self, X):
         out = X
         for layer, act in zip(self.layer, self.activation):
